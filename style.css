@@ -105,22 +105,6 @@ main {
   flex-wrap: wrap;
 }
 
-.faq .question .title input {
-  display: none;
-}
-
-.faq .question .title input:checked ~ label {
-  font-weight: 700;
-}
-
-.faq .question .title input:checked ~ label span {
-  transform: rotate(-180deg);
-}
-
-.faq .question .title input:checked ~ p {
-  display: block;
-}
-
 .faq .question .title label {
   display: flex;
   align-items: center;
@@ -140,8 +124,8 @@ main {
 }
 
 .faq .question .title span {
-  transition: all 0.3s;
   margin: 0 1.2rem;
+  transition: all 0.3s;
 }
 
 .faq .question .title p {
@@ -149,6 +133,22 @@ main {
   color: var(--Dark-grayish-blue);
   padding-top: 1rem;
   transition: all 0.3s;
+}
+
+.faq .question .title input {
+  display: none;
+}
+
+.faq .question .title input:checked ~ label {
+  font-weight: 700;
+}
+
+.faq .question .title input:checked ~ label span {
+  transform: rotate(-180deg);
+}
+
+.faq .question .title input:checked ~ p {
+  display: block;
 }
 
 @media screen and (min-width: 940px) {
